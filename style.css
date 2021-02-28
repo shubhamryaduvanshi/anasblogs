@@ -1,0 +1,113 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*-----------vertically divided into 2 parts-------------------*/
+.vertical-divider{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40vh 210vh;
+    grid-gap: 0.75%;
+}
+
+        /*----------For Admin Details--------------------------------------*/
+            .vertical-divider .admin{
+                margin-left: 2%;
+                background:linear-gradient(teal,rgba(240, 190, 225, 0.5));
+                height: 90vh;
+                color: linen;
+                }
+                    /*----------Admin Name heading--------------*/
+                    .admin h3{
+                            text-align: center;
+                            font-size: 1.7em;
+                            text-transform:uppercase;
+                            }
+ 
+                    /*----------------------Admin Picture-------------*/
+                            .admin .MyProfile{
+                                align-items: center;
+                                text-align: center;
+                            }
+
+                            .admin .MyProfile h4{
+                                font-size: 1.8em;
+                            }
+/*-------------------Main Content---------------------------------------*/
+.container{ 
+    margin: 0 3%;
+    width: 70%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 20vh auto auto;
+    grid-gap: 5%;
+ }
+            /*---------------------------Top title---------------------------------*/
+            .header{
+                    background-color: teal;
+                    color: linen;
+                    text-align: center;
+                    }
+                    
+                    .header h2{
+                            font-size: 3.5em;
+                            word-spacing: 3vh;
+                            text-transform: uppercase;
+                            }
+
+/*-----------------------Blog grid box created------------------------------------*/
+.blogs{
+    margin: 0;
+    padding: 0 3%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    border-radius: 5px;
+    box-shadow:2px 2px 8px rosybrown;
+}
+
+            /*-----------------Blogs picture  ----------------------------*/
+                .blogs .blog-pic img{
+                    position: relative;
+                    margin-top: 5%;
+                    height:90%;
+                    width:90%;
+                }
+                    
+                        /*-------------Blog content ---------------------------*/
+                        .blogs .blog-content{
+                                text-align:justify;
+                                padding: 3%;
+                                font-size: 1.2em;
+                                color: rgb(122, 126, 131);
+                                }
+
+                                    /*----------Blog Heading---------------------------------*/
+                                                .blogs .blog-content h1{
+                                                        text-transform: uppercase;
+                                                        font-size: 2em;
+                                                        color: rgb(102, 104, 105);
+                                                        word-spacing: 2%;
+                                                        }
+
+                                        /*-------Read More Button--------------------*/
+                                                        .blogs .blog-content #myBtn{
+                                                                height: 5vh;
+                                                                width: 20vh;
+                                                                margin-left: 75%;
+                                                                background-color:white;
+                                                                cursor: pointer;
+                                                                font-family:calibri;
+                                                                font-size: 1.15em;
+                                                                border: 2px solid gray;
+                                                              }
+                                        /*--------For text of anchor tag------------------*/
+                                                                    .blogs .blog-content #myBtn a{
+                                                                    color: gray;
+                                                                    text-decoration: none;  
+                                                                }
+                                                              
